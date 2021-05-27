@@ -1,0 +1,96 @@
+{C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl_encode_def.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl_encode_def.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module NPC
+
+Top level modules:
+	NPC
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dm
+
+Top level modules:
+	dm
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mux2
+-- Compiling module mux3
+-- Compiling module mux4
+-- Compiling module mux5
+-- Compiling module mux6
+
+Top level modules:
+	mux2
+	mux3
+	mux4
+	mux5
+	mux6
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sccpu
+
+Top level modules:
+	sccpu
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sccomp_tb
+
+Top level modules:
+	sccomp_tb
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sccomp
+
+Top level modules:
+	sccomp
+
+} {} {}} {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v} {1 {vlog -work work -vopt -stats=none {C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module im
+
+Top level modules:
+	im
+
+} {} {}}

@@ -1,0 +1,96 @@
+
+main:	lui 	x5, 0xF1F2F		#x5= 0xF1F2F000
+        auipc	x6, 0x6 		#x6= 0x6004
+        addi	x5, x5, 0x3F4	#x5= 0xF1F2F3F4
+
+
+        sb		x5, 0(x0)		#[0]= 0xF4
+        sb		x5, 1(x0)		#[1]= 0xF4
+        sh		x5, 2(x0)		#[2]= 0xF3F4
+        sw		x5, 4(x0)		#[4]= 0xF1F2F3F4
+
+        lb		x7, 4(x0)		#x7=0xFFFFFFF4
+        lb		x8, 5(x0)		#x8=0xFFFFFFF3
+        lb		x9, 6(x0)		#x9=0xFFFFFFF2
+        lb		x10, 7(x0)		#x10=0xFFFFFFF1
+        lh		x11, 0(x0)		#x11=0xFFFFF4F4
+        lh		x12, 2(x0)		#x12=0xFFFFF3F4
+        lw		x13, 4(x0)		#x13=0xF1F2F3F4
+        lbu		x14, 0(x0)		#x14=0xF4
+        lbu		x15, 1(x0)		#x15=0xF4
+        lbu		x16, 2(x0)		#x16=0xF4
+        lbu		x17, 3(x0)		#x17=0xF3
+        lhu		x18, 4(x0)		#x18=0xF3F4
+        lhu		x19, 6(x0)		#x19=0xF1F2
+
+        add		x7, x8, x9		#x7=0xFFFFFFE5
+        sub		x7, x12, x11	#x7=0xFFFFFF00
+        xor		x7, x11, x12	#x7=0x00000700
+        and		x7, x18, x19	#x7=0x0000F1F0
+        or		x7, x18, x19	#x7=0x0000F3F6
+        slt		x7, x13, x14	#x7=1
+        sltu	        x7, x13, x14	#x7=0
+        sub		x8,	x0, x8		#x8=13
+        sll		x7, x13, x8		#x7=0x5E7E8000
+        srl		x7, x13, x8		#x7=0x00078F97
+        sra		x7, x13, x8		#x7=0xFFFF8F97
+
+        addi	x7, x17, -255	
+        xori 	x7, x18, 1871
+        ori	x7, x18, 1871
+        andi	x7, x18, 1871
+        slti	x7, x8, -13
+        sltiu	x7, x8, -13
+        slli	x7, x13, 12
+        srli	x7, x13, 12
+        srai	x7, x13, 12
+
+
+
+        ori	x6, x0, 1	# x6=1
+        ori	x7, x0, 2	# x7=2
+        beq	x6, x7, n1	# no
+	addi 	x6, x6, 1
+n1:        
+        beq	x6, x7, n2	# yes
+        addi 	x6, x6, 1
+n2: # x6=2, x7=2
+	bne	x6, x7, n3 # no
+        addi	x7, x7, 1
+n3:
+	bne 	x6, x7, n4 # yes
+        addi	x7, x7, 1
+n4: # x6=2, x7=3
+	sh	x7, 8(x6)	# [10] = 3
+
+	ori	x6, x0, -5
+	ori 	x7, x0, -2
+n6:
+   	addi	x6, x6, 2
+        addi	x7, x7, 1
+	bge	x6, x7, n5 
+        blt	x6, x7, n6
+        ori	x6, x6, 0xff # never reach
+n5: # x6=x7=1
+        sb	x6, 12(x7) 	# [13] = 1
+        ori	x6, x0, -6
+	ori 	x7, x0, -2
+n7:
+   	addi	x6, x6, 2
+        addi	x7, x7, 1
+	bgeu 	x6, x7, n8 
+        bltu 	x6, x7, n7
+        ori	x6, x6, 0xff # never reach
+n8: # x6=-2, x7=0
+        sh	x6, 14(x7) 	# [14]= -2
+        
+        
+        ori     x6, x0, 15
+        jal	x1, func
+        addi 	x6, x6, 1
+        jal	x1, end
+func:
+        add	x6, x6, x6		
+        jalr	x0, x1, 0	
+end:
+        sw      x6, 16(x0) # [16]= 0x1F

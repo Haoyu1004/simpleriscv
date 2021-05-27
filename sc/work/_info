@@ -1,0 +1,330 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/lab/alu
+T_opt
+!s110 1621924568
+V`ATV0eA:lFV`hIzDj5>oA2
+04 9 4 work sccomp_tb fast 0
+=1-b4a9fc06d403-60ac9ad7-22d-2308
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+R0
+valu
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;OOOC5mf0R]KDMhe8K_PB0
+InzRRFVI2RT]1^fO8]<36_2
+Z2 dC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc
+w1621929484
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+L0 4
+Z3 OL;L;10.4;61
+!s108 1621929578.248000
+!s107 ctrl_encode_def.v|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vctrl
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 <Mkl<GVfH9ZImW@31aSh_0
+In^^=<C1oF0Kk>MkIW3Z?;1
+R2
+w1621929554
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v
+L0 3
+R3
+!s108 1621929578.493000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/ctrl.v|
+!i113 0
+R4
+vdm
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 OVIW5@F3J>7``J16aLmKB0
+IDV=4RSiQ_b20RPb1klI[F1
+R2
+w1621926631
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v
+L0 4
+R3
+!s108 1621926637.731000
+!s107 ctrl_encode_def.v|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/dm.v|
+!i113 0
+R4
+vEXT
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hdcGfJjRAgCX8A@XU;=]a3
+IcIfb]z6iPFWjYNflOn25l3
+R2
+w1621930251
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v
+L0 4
+R3
+!s108 1621930287.329000
+!s107 ctrl_encode_def.v|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/EXT.v|
+!i113 0
+R4
+n@e@x@t
+vim
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 SgaT8R[m4=HlAjAF2j5o01
+I]UcWMO39PAA0>Q:Cm^f;V1
+R2
+w1621340733
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v
+L0 3
+R3
+!s108 1621926339.210000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/im.v|
+!i113 0
+R4
+vmux2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 <ZHfg>K[O<D63X72om:FN3
+IWYM[Tmjk<Z8Tzm7fbXP=:2
+R2
+Z5 w1621241098
+Z6 8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+Z7 FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+L0 2
+R3
+Z8 !s108 1621926339.434000
+Z9 !s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v|
+!i113 0
+R4
+vmux3
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 6ozSkQ^4_gdCIDnFJ_6RX1
+IPhjg17[K=K9`iX>neBho]3
+R2
+R5
+R6
+R7
+L0 9
+R3
+R8
+R9
+R10
+!i113 0
+R4
+vmux4
+Z11 !s110 1621926339
+!i10b 1
+!s100 b[]<?5=17PV;0LX>3f<0S2
+Il=mNoTC>aEWc[RAaeJ>F:0
+R1
+R2
+R5
+R6
+R7
+L0 16
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R4
+vmux5
+R11
+!i10b 1
+!s100 ci9jig75WY9@1aPmQ]9h=0
+Ia3>j_^RGi5ZO<=jzMZQ9A1
+R1
+R2
+R5
+R6
+R7
+L0 31
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R4
+vmux6
+R11
+!i10b 1
+!s100 BFG]VWloz9[QQ@2>WD[nD2
+ID3WY7GfMKP1AF]3;TAf=l2
+R1
+R2
+R5
+R6
+R7
+L0 47
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R4
+vNPC
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 g:h26<<cgO5E^eDSG=Ncj0
+IBS9zPcX49cY]M45I77lm?1
+R2
+w1621931584
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v
+L0 3
+R3
+!s108 1621931595.743000
+!s107 ctrl_encode_def.v|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/NPC.v|
+!i113 0
+R4
+n@n@p@c
+vPC
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 b`zELjccg:U6eQ<4MK8OU1
+Ib?e6jSFPAUn?2oTJ2Y7M[3
+R2
+w1621340787
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v
+L0 1
+R3
+!s108 1621926339.997000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/PC.v|
+!i113 0
+R4
+n@p@c
+vRF
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 A5VoEI4;jLieiFJA2n=9Z1
+IbiTk0>Zi5CKDGG>K4LB?T1
+R2
+w1621931648
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v
+L0 2
+R3
+!s108 1621931660.418000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/RF.v|
+!i113 0
+R4
+n@r@f
+vsccomp
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2:AZXlRoecM5IZB@:GWN:2
+I;;MEIOC>`Y_B<WCfg1=fm2
+R2
+w1621923869
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v
+L0 1
+R3
+!s108 1621926340.529000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp.v|
+!i113 0
+R4
+vsccomp_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 UzzlT1A3dj2o7oZjWLQnD2
+IjeYf45WLjH;YI?Pd<KDYJ3
+R2
+w1621924550
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v
+L0 3
+R3
+!s108 1621926340.772000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v|
+!i113 0
+R4
+vsccpu
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^LNUjEc[U_SOBaji]N@KQ3
+IBQ[hH`cmo4lnd2NiX2]fY2
+R2
+w1621930893
+8C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v
+FC:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v
+L0 2
+R3
+!s108 1621930961.819000
+!s107 C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v|
+!i113 0
+R4

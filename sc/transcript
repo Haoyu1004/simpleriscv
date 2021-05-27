@@ -1,0 +1,2590 @@
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dm.v was successful.
+# Compile of EXT.v was successful.
+# Compile of im.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of sccpu.v failed with 1 errors.
+# 13 compiles, 1 failed with 1 error.
+# Compile of sccpu.v was successful.
+vsim -voptargs=+acc work.sccomp_tb
+# vsim -gui C:\Users\11630\OneDrive - whu.edu.cn\4-csapp2\sc\sc.mpf 
+# Start time: 14:33:01 on May 25,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.sccomp_tb(fast)
+# Loading work.sccomp(fast)
+# Loading work.sccpu(fast)
+# Loading work.PC(fast)
+# Loading work.NPC(fast)
+# Loading work.ctrl(fast)
+# Loading work.RF(fast)
+# Loading work.EXT(fast)
+# Loading work.mux2(fast)
+# Loading work.alu(fast)
+# Loading work.mux3(fast)
+# Loading work.dm(fast)
+# Loading work.im(fast)
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_alu/*
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# ** Note: $stop    : C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v(54)
+#    Time: 100 ns  Iteration: 0  Instance: /sccomp_tb
+# Break in Module sccomp_tb at C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v line 54
+quit -sim
+# Compile of sccomp_tb.v was successful.
+vsim -voptargs=+acc work.sccomp_tb
+# vsim 
+# Start time: 14:36:06 on May 25,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.sccomp_tb(fast)
+# Loading work.sccomp(fast)
+# Loading work.sccpu(fast)
+# Loading work.PC(fast)
+# Loading work.NPC(fast)
+# Loading work.ctrl(fast)
+# Loading work.RF(fast)
+# Loading work.EXT(fast)
+# Loading work.mux2(fast)
+# Loading work.alu(fast)
+# Loading work.mux3(fast)
+# Loading work.dm(fast)
+# Loading work.im(fast)
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_alu/*
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0x00000000,
+run
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00000000,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_PC/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_ctrl/#ASSIGN#23/*
+# (vish-4014) No objects found matching '/sccomp_tb/U_SCCOMP/U_SCPU/sc_ctrl/#ASSIGN#23/*'.
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/U_RF/*
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.sccomp_tb(fast)
+# Loading work.sccomp(fast)
+# Loading work.sccpu(fast)
+# Loading work.PC(fast)
+# Loading work.NPC(fast)
+# Loading work.ctrl(fast)
+# Loading work.RF(fast)
+# Loading work.EXT(fast)
+# Loading work.mux2(fast)
+# Loading work.alu(fast)
+# Loading work.mux3(fast)
+# Loading work.dm(fast)
+# Loading work.im(fast)
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0x00000000,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_ctrl/*
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.sccomp_tb(fast)
+# Loading work.sccomp(fast)
+# Loading work.sccpu(fast)
+# Loading work.PC(fast)
+# Loading work.NPC(fast)
+# Loading work.ctrl(fast)
+# Loading work.RF(fast)
+# Loading work.EXT(fast)
+# Loading work.mux2(fast)
+# Loading work.alu(fast)
+# Loading work.mux3(fast)
+# Loading work.dm(fast)
+# Loading work.im(fast)
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0x00000000,
+# Compile of ctrl.v was successful.
+quit -sim
+vsim -novopt work.sccomp_tb
+# vsim 
+# Start time: 14:47:28 on May 25,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccomp_tb
+# Loading work.sccomp_tb
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccomp
+# Loading work.sccomp
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccpu
+# Loading work.sccpu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.PC
+# Loading work.PC
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.NPC
+# Loading work.NPC
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.RF
+# Loading work.RF
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.EXT
+# Loading work.EXT
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.mux2
+# Loading work.mux2
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.alu
+# Loading work.alu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.mux3
+# Loading work.mux3
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.im
+# Loading work.im
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_alu/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_ext/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_PC/*
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_ctrl/*
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0x00000000,
+# Compile of alu.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.alu
+# Loading work.alu
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+run
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00000000,
+# Compile of ctrl.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+run
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+run
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+run
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+run
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_DM/*
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+run
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+run
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+run
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+run
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+# Compile of dm.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of dm.v was successful.
+# Compile of EXT.v was successful.
+# Compile of im.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# Compile of sccpu.v was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccomp_tb
+# Loading work.sccomp_tb
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccomp
+# Loading work.sccomp
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccpu
+# Loading work.sccpu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.PC
+# Loading work.PC
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.NPC
+# Loading work.NPC
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.RF
+# Loading work.RF
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.EXT
+# Loading work.EXT
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.mux2
+# Loading work.mux2
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.alu
+# Loading work.alu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.mux3
+# Loading work.mux3
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.im
+# Loading work.im
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+# Compile of dm.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+# Compile of dm.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xxxxxxxxx,
+run
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0x00000001,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0x00000001,
+run
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0x00000001,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0x00000001,
+run
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xfffff3f4,
+run
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0xf3f4f4f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# Compile of dm.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.dm
+# Loading work.dm
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+run
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+run
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+run
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+run
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+run
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+run
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+run
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+run
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+run
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+run
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+run
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+run
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+run
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+run
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+run
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+run
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+run
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0xf2f3f400,
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of sccpu.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of sccpu.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccpu
+# Loading work.sccpu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.alu
+# Loading work.alu
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(90): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# Warning in wave window restart: (vish-4014) No objects found matching '/sccomp_tb/U_SCCOMP/U_SCPU/sc_alu/shamt'. 
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(90): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+run
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+run
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+run
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+run
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+run
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+run
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+run
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+run
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+run
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+run
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+run
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+run
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+run
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+run
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+run
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+run
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0xxxxxxxxx,
+run
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xf1f2f3f4,
+run
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0xf1f2f3f4,
+run
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of sccpu.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccpu
+# Loading work.sccpu
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.EXT
+# Loading work.EXT
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xf1f2f3f4,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0xf1f2f3f4,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# Compile of ctrl.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+run
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+run
+# PC = 0x000000a8, instr = 0x00730463
+run
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+run
+# PC = 0x000000b0, instr = 0x00730463
+run
+# PC = 0x000000b8, instr = 0x00731463
+run
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+run
+# PC = 0x000000c0, instr = 0x00731463
+run
+# PC = 0x000000c8, instr = 0x00731423
+run
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+run
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+run
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+run
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+run
+# PC = 0x000000dc, instr = 0x00735663
+run
+# PC = 0x000000e0, instr = 0xfe734ae3
+run
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+run
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+run
+# PC = 0x000000dc, instr = 0x00735663
+run
+# PC = 0x000000e0, instr = 0xfe734ae3
+run
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+run
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+run
+# PC = 0x000000dc, instr = 0x00735663
+run
+# PC = 0x000000e8, instr = 0x00638623
+run
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+run
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+run
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+run
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+run
+# PC = 0x000000fc, instr = 0x00737663
+run
+# PC = 0x00000100, instr = 0xfe736ae3
+run
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+run
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+run
+# PC = 0x000000fc, instr = 0x00737663
+run
+# PC = 0x00000100, instr = 0xfe736ae3
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.ctrl
+# Loading work.ctrl
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.alu
+# Loading work.alu
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+run
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+run
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+run
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+run
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+run
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+run
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+run
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+run
+# PC = 0x000000fc, instr = 0x00737663
+run
+# PC = 0x00000108, instr = 0x00639723
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+run
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+run
+# PC = 0x000000fc, instr = 0x00737663
+run
+# PC = 0x00000108, instr = 0x00639723
+run
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+run
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x00006000,
+run
+# PC = 0x00006000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+add wave -position insertpoint sim:/sccomp_tb/U_SCCOMP/U_SCPU/sc_NPC/*
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x00006000,
+# Compile of EXT.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.EXT
+# Loading work.EXT
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000000c,
+run
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000000c,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000000c,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000000c,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000000c,
+run
+# PC = 0x0000000c, instr = 0x00500023
+# Compile of NPC.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.NPC
+# Loading work.NPC
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(91): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(96): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x0000011c,
+# PC = 0x0000011c, instr = 0x00630333
+# r[ 6] = 0x0000001e,
+# Compile of sccpu.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.sccpu
+# Loading work.sccpu
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(92): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(97): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(97): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x00000114,
+# PC = 0x0000011c, instr = 0x00630333
+# r[ 6] = 0x0000001e,
+run
+# PC = 0x00000120, instr = 0x00008067
+# r[ 0] = 0x00000124,
+run
+# PC = 0x00000234, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# Compile of NPC.v was successful.
+# Compile of RF.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of RF.v was successful.
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.NPC
+# Loading work.NPC
+# Refreshing C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/work.RF
+# Loading work.RF
+# ** Warning: (vsim-3015) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(92): [PCDPC] - Port size (32) does not match connection size (5) for port 'd2'. The port definition is at: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_aluBsrc File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/mux.v
+# ** Warning: (vsim-3017) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(97): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb/U_SCCOMP/U_SCPU/sc_alu File: C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/alu.v
+# ** Warning: (vsim-3722) C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccpu.v(97): [TFMPC] - Missing connection for port 'ltu'.
+run -continue
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xf1f2f2b7
+# r[ 5] = 0xf1f2f000,
+# PC = 0x00000004, instr = 0x00006317
+# r[ 6] = 0x00006004,
+# PC = 0x00000008, instr = 0x3f428293
+# r[ 5] = 0xf1f2f3f4,
+# PC = 0x0000000c, instr = 0x00500023
+# PC = 0x00000010, instr = 0x005000a3
+# PC = 0x00000014, instr = 0x00501123
+# PC = 0x00000018, instr = 0x00502223
+# PC = 0x0000001c, instr = 0x00400383
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000020, instr = 0x00500403
+# r[ 8] = 0xfffffff3,
+# PC = 0x00000024, instr = 0x00600483
+# r[ 9] = 0xfffffff2,
+# PC = 0x00000028, instr = 0x00700503
+# r[10] = 0xfffffff1,
+# PC = 0x0000002c, instr = 0x00001583
+# r[11] = 0xfffff4f4,
+# PC = 0x00000030, instr = 0x00201603
+# r[12] = 0xfffff3f4,
+# PC = 0x00000034, instr = 0x00402683
+# r[13] = 0xf1f2f3f4,
+# PC = 0x00000038, instr = 0x00004703
+# r[14] = 0x000000f4,
+# PC = 0x0000003c, instr = 0x00104783
+# r[15] = 0x000000f4,
+# PC = 0x00000040, instr = 0x00204803
+# r[16] = 0x000000f4,
+# PC = 0x00000044, instr = 0x00304883
+# r[17] = 0x000000f3,
+# PC = 0x00000048, instr = 0x00405903
+# r[18] = 0x0000f3f4,
+# PC = 0x0000004c, instr = 0x00605983
+# r[19] = 0x0000f1f2,
+# PC = 0x00000050, instr = 0x009403b3
+# r[ 7] = 0xffffffe5,
+# PC = 0x00000054, instr = 0x40b603b3
+# r[ 7] = 0xffffff00,
+# PC = 0x00000058, instr = 0x00c5c3b3
+# r[ 7] = 0x00000700,
+# PC = 0x0000005c, instr = 0x013973b3
+# r[ 7] = 0x0000f1f0,
+# PC = 0x00000060, instr = 0x013963b3
+# r[ 7] = 0x0000f3f6,
+# PC = 0x00000064, instr = 0x00e6a3b3
+# r[ 7] = 0x00000001,
+# PC = 0x00000068, instr = 0x00e6b3b3
+# r[ 7] = 0x00000000,
+# PC = 0x0000006c, instr = 0x40800433
+# r[ 8] = 0x0000000d,
+# PC = 0x00000070, instr = 0x008693b3
+# r[ 7] = 0x5e7e8000,
+# PC = 0x00000074, instr = 0x0086d3b3
+# r[ 7] = 0xffff8f97,
+# PC = 0x00000078, instr = 0x4086d3b3
+# r[ 7] = 0x00078f97,
+# PC = 0x0000007c, instr = 0xf0188393
+# r[ 7] = 0xfffffff4,
+# PC = 0x00000080, instr = 0x74f94393
+# r[ 7] = 0x0000f4bb,
+# PC = 0x00000084, instr = 0x74f96393
+# r[ 7] = 0x0000f7ff,
+# PC = 0x00000088, instr = 0x74f97393
+# r[ 7] = 0x00000344,
+# PC = 0x0000008c, instr = 0xff342393
+# r[ 7] = 0x00000000,
+# PC = 0x00000090, instr = 0xff343393
+# r[ 7] = 0x00000001,
+# PC = 0x00000094, instr = 0x00c69393
+# r[ 7] = 0x2f3f4000,
+# PC = 0x00000098, instr = 0x00c6d393
+# r[ 7] = 0xffff1f2f,
+# PC = 0x0000009c, instr = 0x40c6d393
+# r[ 7] = 0x000f1f2f,
+# PC = 0x000000a0, instr = 0x00106313
+# r[ 6] = 0x00000001,
+# PC = 0x000000a4, instr = 0x00206393
+# r[ 7] = 0x00000002,
+# PC = 0x000000a8, instr = 0x00730463
+# PC = 0x000000ac, instr = 0x00130313
+# r[ 6] = 0x00000002,
+# PC = 0x000000b0, instr = 0x00730463
+# PC = 0x000000b8, instr = 0x00731463
+# PC = 0x000000bc, instr = 0x00138393
+# r[ 7] = 0x00000003,
+# PC = 0x000000c0, instr = 0x00731463
+# PC = 0x000000c8, instr = 0x00731423
+# PC = 0x000000cc, instr = 0xffb06313
+# r[ 6] = 0xfffffffb,
+# PC = 0x000000d0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xfffffffd,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0xffffffff,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e0, instr = 0xfe734ae3
+# PC = 0x000000d4, instr = 0x00230313
+# r[ 6] = 0x00000001,
+# PC = 0x000000d8, instr = 0x00138393
+# r[ 7] = 0x00000001,
+# PC = 0x000000dc, instr = 0x00735663
+# PC = 0x000000e8, instr = 0x00638623
+# PC = 0x000000ec, instr = 0xffa06313
+# r[ 6] = 0xfffffffa,
+# PC = 0x000000f0, instr = 0xffe06393
+# r[ 7] = 0xfffffffe,
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffc,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0xffffffff,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000100, instr = 0xfe736ae3
+# PC = 0x000000f4, instr = 0x00230313
+# r[ 6] = 0xfffffffe,
+# PC = 0x000000f8, instr = 0x00138393
+# r[ 7] = 0x00000000,
+# PC = 0x000000fc, instr = 0x00737663
+# PC = 0x00000108, instr = 0x00639723
+# PC = 0x0000010c, instr = 0x00f06313
+# r[ 6] = 0x0000000f,
+# PC = 0x00000110, instr = 0x00c000ef
+# r[ 1] = 0x00000114,
+# PC = 0x0000011c, instr = 0x00630333
+# r[ 6] = 0x0000001e,
+# PC = 0x00000120, instr = 0x00008067
+# PC = 0x00000114, instr = 0x00130313
+# r[ 6] = 0x0000001f,
+run
+# PC = 0x00000118, instr = 0x00c000ef
+# r[ 1] = 0x0000011c,
+run
+# PC = 0x00000124, instr = 0x00602823
+run
+# PC = 0x00000128, instr = 0xxxxxxxxx
+run
+# PC = 0x0000012c, instr = 0xxxxxxxxx
+run
+# PC = 0x00000130, instr = 0xxxxxxxxx
+# ** Note: $stop    : C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v(56)
+#    Time: 8300 ns  Iteration: 0  Instance: /sccomp_tb
+# Break in Module sccomp_tb at C:/Users/11630/OneDrive - whu.edu.cn/4-csapp2/sc/sccomp_tb.v line 56
+run
+# PC = 0x00000134, instr = 0xxxxxxxxx
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# ** Warning: No matching channel descriptor '2' found.  Ignoring the write into the invalid channel.
+#    Time: 8400 ns  Iteration: 0  Instance: /sccomp_tb
+# End time: 16:39:09 on May 25,2021, Elapsed time: 1:51:41
+# Errors: 1, Warnings: 67
