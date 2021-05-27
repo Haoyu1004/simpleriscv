@@ -143,7 +143,7 @@ module ctrl(
     // `define ALU_ADD     4'b0001  
     wire _add = i_add | i_addi | i_lui | i_jalr | ltype | stype;
     // `define ALU_SUB     4'b0010 
-    wire _sub = i_sub ;
+    wire _sub = i_sub | i_beq | i_bne;
     // `define ALU_AND     4'b0011
     wire _and = i_and | i_andi;
     // `define ALU_OR      4'b0100
@@ -157,7 +157,7 @@ module ctrl(
     // `define ALU_SRA     4'b1000
     wire _sra = i_sra | i_srai;
     // `define ALU_SLT     4'b1001
-    wire _slt = i_slt | i_slti | i_beq | i_bne | i_bge | i_blt;
+    wire _slt = i_slt | i_slti  | i_bge | i_blt;
     // `define ALU_SLTU    4'b1010
     wire _sltu= i_sltu | i_sltiu | i_bgeu | i_bltu;
     // `define ALU_LUI     4'b1011

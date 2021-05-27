@@ -27,7 +27,7 @@ module alu(A, B, ALUOp, PC, C, zero, lt, ltu);
             `ALU_SRL  : C = A >> B; 
             `ALU_SRA  : C = A >>>B;
             `ALU_SLT  : C = (A < B) ? 1 : 0;
-            `ALU_SLTU : C = (A < $unsigned(B)) ? 1 : 0;
+            `ALU_SLTU : C = ($unsigned(A) < $unsigned(B)) ? 1 : 0;
             `ALU_LUI  : C = B;
             `ALU_AUIPC: C = B + PC; 
             default:    C = A; 
