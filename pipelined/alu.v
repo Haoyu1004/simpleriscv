@@ -1,7 +1,7 @@
 
 `include "ctrl_encode_def.v"
 
-module alu(A, B, ALUOp, PC, C, zero, lt, ltu);
+module alu(A, B, ALUOp, PC, C, zero, lt);
            
     input  signed [31:0] A, B;
     // input         [4:0]  shamt;
@@ -10,7 +10,7 @@ module alu(A, B, ALUOp, PC, C, zero, lt, ltu);
     output signed [31:0] C;
     output               zero;
     output               lt;
-    output               ltu;
+    // output               ltu;
 
     reg [31:0] C;
     integer    i;

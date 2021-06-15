@@ -16,6 +16,9 @@ module nextPC(  // next pc module
     always @(*) begin
         case (Branch)
             `BRANCH_PCPLUS4:    NPC = PC + 4;
+            `BRANCH_EXCEPTION:  NPC = 32'h1C090000;
+            `BRANCH_STALL:      NPC = PC;
+            
             `BRANCH_BEQ:        NPC = (zero) ? PC + IMM : PC + 4;
             `BRANCH_BNE:        NPC = (~zero) ? PC + IMM : PC + 4;
             `BRANCH_BLT:        NPC = (lt) ? PC + IMM : PC + 4;

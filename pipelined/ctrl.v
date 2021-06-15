@@ -98,7 +98,7 @@ module ctrl(
     // 01 from D-Mem, 00 from ALUout, 10 from PC (jump-and-link)
     
     assign ALUSrc[0] = ltype | stype | itype | i_lui | i_auipc;  
-    assign ALUSrc[1] = 1'b0;
+    assign ALUSrc[1] = ALUSrc[0];
     // 01 from instruction immediate
 
 
@@ -107,6 +107,7 @@ module ctrl(
     assign ID_Branch_MEM[2] = i_bge | i_bgeu | i_jal | i_jalr;
     assign ID_Branch_MEM[3] = sbtype | i_jal | i_jalr;
     // `define BRANCH_PCPLUS4  4'b0000
+    // add stall and exception
     // `define BRANCH_BEQ      4'b1000
     // `define BRANCH_BNE      4'b1001
     // `define BRANCH_BLT      4'b1010

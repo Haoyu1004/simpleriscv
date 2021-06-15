@@ -7,6 +7,9 @@
 
 // Branch
 `define BRANCH_PCPLUS4  4'b0000
+`define BRANCH_EXCEPTION 4'b0001
+`define BRANCH_STALL    4'b0010
+
 `define BRANCH_BEQ      4'b1000
 `define BRANCH_BNE      4'b1001
 `define BRANCH_BLT      4'b1010
